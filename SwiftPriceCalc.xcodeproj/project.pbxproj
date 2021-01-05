@@ -56,15 +56,47 @@
 		D775129F25A36396007FF1D1 /* SwiftPriceCalc */ = {
 			isa = PBXGroup;
 			children = (
+				D77512B725A36AC3007FF1D1 /* Other */,
+				D77512B425A36A88007FF1D1 /* Model */,
+				D77512B625A36A9F007FF1D1 /* View */,
+				D77512B525A36A96007FF1D1 /* ViewModel */,
 				D77512A025A36396007FF1D1 /* AppDelegate.swift */,
 				D77512A225A36396007FF1D1 /* SceneDelegate.swift */,
-				D77512A425A36396007FF1D1 /* ViewController.swift */,
-				D77512A625A36396007FF1D1 /* Main.storyboard */,
 				D77512A925A3639F007FF1D1 /* Assets.xcassets */,
 				D77512AB25A3639F007FF1D1 /* LaunchScreen.storyboard */,
 				D77512AE25A3639F007FF1D1 /* Info.plist */,
 			);
 			path = SwiftPriceCalc;
+			sourceTree = "<group>";
+		};
+		D77512B425A36A88007FF1D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D77512B525A36A96007FF1D1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D77512B625A36A9F007FF1D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D77512A425A36396007FF1D1 /* ViewController.swift */,
+				D77512A625A36396007FF1D1 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D77512B725A36AC3007FF1D1 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
