@@ -16,6 +16,8 @@
 		D77512BC25A4A736007FF1D1 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77512BA25A4A736007FF1D1 /* ProductCell.swift */; };
 		D77512BD25A4A736007FF1D1 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D77512BB25A4A736007FF1D1 /* ProductCell.xib */; };
 		D77512BF25A4AACB007FF1D1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77512BE25A4AACB007FF1D1 /* ViewModel.swift */; };
+		D77512C125A4AB72007FF1D1 /* ProductCalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77512C025A4AB72007FF1D1 /* ProductCalculatorVC.swift */; };
+		D77512C325A4ABB6007FF1D1 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77512C225A4ABB6007FF1D1 /* SettingsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		D77512BA25A4A736007FF1D1 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		D77512BB25A4A736007FF1D1 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		D77512BE25A4AACB007FF1D1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D77512C025A4AB72007FF1D1 /* ProductCalculatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCalculatorVC.swift; sourceTree = "<group>"; };
+		D77512C225A4ABB6007FF1D1 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				D77512A425A36396007FF1D1 /* ViewController.swift */,
+				D77512C225A4ABB6007FF1D1 /* SettingsVC.swift */,
 				D77512A625A36396007FF1D1 /* Main.storyboard */,
 				D77512BA25A4A736007FF1D1 /* ProductCell.swift */,
 				D77512BB25A4A736007FF1D1 /* ProductCell.xib */,
+				D77512C025A4AB72007FF1D1 /* ProductCalculatorVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,11 +186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D77512C125A4AB72007FF1D1 /* ProductCalculatorVC.swift in Sources */,
 				D77512BF25A4AACB007FF1D1 /* ViewModel.swift in Sources */,
 				D77512A525A36396007FF1D1 /* ViewController.swift in Sources */,
 				D77512BC25A4A736007FF1D1 /* ProductCell.swift in Sources */,
 				D77512A125A36396007FF1D1 /* AppDelegate.swift in Sources */,
 				D77512A325A36396007FF1D1 /* SceneDelegate.swift in Sources */,
+				D77512C325A4ABB6007FF1D1 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
