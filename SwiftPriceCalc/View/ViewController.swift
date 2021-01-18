@@ -20,7 +20,9 @@ class ViewController: UIViewController {
 
 
     @IBAction func skipToList(_ sender: UIButton) {
-        vm.goTo(viewControllerName: "ProductListVC", navigation: self.navigationController!)
+        show(ProductListVC(), sender: self)
+//        performSegue(withIdentifier: "ProductListSegue", sender: self)
+//        vm.goTo(viewControllerName: "ProductListVC", navigation: self.navigationController!)
     }
 }
 
