@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -20,21 +20,29 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="SKIP"/>
+                                <connections>
+                                    <action selector="skipToList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aQo-ar-o0W"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Rb3-PO-EqQ"/>
+                    <connections>
+                        <outlet property="skipButton" destination="USz-Y2-a6Y" id="RJi-LX-D9e"/>
+                        <outlet property="vm" destination="TEU-Rm-ht2" id="sZL-Cq-M5x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="TEU-Rm-ht2" customClass="ViewModel"/>
             </objects>
             <point key="canvasLocation" x="-693" y="137"/>
         </scene>
-        <!--View Controller-->
+        <!--Product ListVC-->
         <scene sceneID="B8b-C6-hWN">
             <objects>
-                <viewController id="tKZ-W4-bqJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductListVC" id="tKZ-W4-bqJ" customClass="ProductListVC" customModule="SwiftPriceCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sx1-UX-ud0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,6 +98,7 @@
         <!--Navigation Controller-->
         <scene sceneID="NF7-7P-xL5">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vmv-Ld-Pxe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8xY-Jn-A6w" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LSa-nF-ZXd">
@@ -101,7 +110,6 @@
                         <segue destination="tKZ-W4-bqJ" kind="relationship" relationship="rootViewController" id="xBq-4f-ebP"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Vmv-Ld-Pxe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="165" y="137"/>
         </scene>

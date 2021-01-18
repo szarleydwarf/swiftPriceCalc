@@ -9,11 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var skipButton: UIButton!
+    
+    @IBOutlet var vm: ViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.vm = ViewModel()
     }
 
 
+    @IBAction func skipToList(_ sender: UIButton) {
+        vm.goTo(viewControllerName: "ProductListVC", navigation: self.navigationController!)
+    }
 }
 

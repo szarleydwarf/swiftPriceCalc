@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import UIKit
+
+class ViewModel: NSObject {
+    
+    
+    func goTo(viewControllerName:String, navigation: UINavigationController) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: viewControllerName) as! ProductListVC
+        navigation.pushViewController(vc, animated: true)
+    }
+}
