@@ -68,14 +68,11 @@
 		D775129F25A36396007FF1D1 /* SwiftPriceCalc */ = {
 			isa = PBXGroup;
 			children = (
-				D77512B725A36AC3007FF1D1 /* Other */,
 				D77512B425A36A88007FF1D1 /* Model */,
 				D77512B625A36A9F007FF1D1 /* View */,
 				D77512B525A36A96007FF1D1 /* ViewModel */,
-				D77512A025A36396007FF1D1 /* AppDelegate.swift */,
-				D77512A225A36396007FF1D1 /* SceneDelegate.swift */,
-				D77512A925A3639F007FF1D1 /* Assets.xcassets */,
-				D77512AB25A3639F007FF1D1 /* LaunchScreen.storyboard */,
+				D7ED018C25B5F3A900273842 /* StoryboardETC */,
+				D77512B725A36AC3007FF1D1 /* Other */,
 				D77512AE25A3639F007FF1D1 /* Info.plist */,
 			);
 			path = SwiftPriceCalc;
@@ -101,9 +98,6 @@
 			children = (
 				D77512A425A36396007FF1D1 /* ViewController.swift */,
 				D77512C225A4ABB6007FF1D1 /* SettingsVC.swift */,
-				D77512A625A36396007FF1D1 /* Main.storyboard */,
-				D77512BA25A4A736007FF1D1 /* ProductCell.swift */,
-				D77512BB25A4A736007FF1D1 /* ProductCell.xib */,
 				D77512C025A4AB72007FF1D1 /* ProductCalculatorVC.swift */,
 				D7ED018A25B5E75900273842 /* ProductListVC.swift */,
 			);
@@ -113,8 +107,22 @@
 		D77512B725A36AC3007FF1D1 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				D77512A225A36396007FF1D1 /* SceneDelegate.swift */,
+				D77512A025A36396007FF1D1 /* AppDelegate.swift */,
+				D77512AB25A3639F007FF1D1 /* LaunchScreen.storyboard */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		D7ED018C25B5F3A900273842 /* StoryboardETC */ = {
+			isa = PBXGroup;
+			children = (
+				D77512A625A36396007FF1D1 /* Main.storyboard */,
+				D77512BA25A4A736007FF1D1 /* ProductCell.swift */,
+				D77512BB25A4A736007FF1D1 /* ProductCell.xib */,
+				D77512A925A3639F007FF1D1 /* Assets.xcassets */,
+			);
+			path = StoryboardETC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
