@@ -8,13 +8,30 @@
 
 import Foundation
 import UIKit
+import AVKit
 
 class ViewModel: NSObject {
     
     
     func goTo(viewControllerName:String, navigation: UINavigationController) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: viewControllerName) as! ProductListVC
-        navigation.pushViewController(vc, animated: true)
+//        let vc = storyboard.instantiateViewController(withIdentifier: viewControllerName) as! ProductListVC
+//        navigation.pushViewController(vc, animated: true)
     }
+    func getFilePath(from resourceName:String, type: String) -> String {
+        guard let path = Bundle.main.path(forResource: resourceName, ofType: type) else {
+            debugPrint("intro.mp4 not found")
+            return ""
+        }
+        return path
+    }
+    
+    func playVideo(from path:String, in view:UIView) {
+        let player = AVPlayer(url: URL(fileURLWithPath: path))
+        let playerLayer = AVPlayerLayer(player: player)
+        playerLayer.frame = view.bounds
+        view.layer.addSublayer(playerLayer)
+        player.play()
+    }
+
 }
