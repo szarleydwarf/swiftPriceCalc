@@ -20,7 +20,7 @@ class ViewModel: NSObject {
     }
     func getFilePath(from resourceName:String, type: String) -> String {
         guard let path = Bundle.main.path(forResource: resourceName, ofType: type) else {
-            debugPrint("intro.mp4 not found")
+            debugPrint("file > \(resourceName).\(type) < not found")
             return ""
         }
         return path
