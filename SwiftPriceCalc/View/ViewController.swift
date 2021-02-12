@@ -18,7 +18,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.vm = ViewModel()
-        vm.playVideo(from: vm.getFilePath(from: Const().intro, type: Const().videoExt), in:video)
+        let path = vm.getFilePath(from: "lol", type: Const().videoExt)
+        if path.isEmpty {
+            vm.showAlert(view: self, title: "Alert", message: "file > \(Const().intro).\(Const().videoExt) < not found")
+        }
+        vm.playVideo(from: path, in:video)
     }
 
 

@@ -15,12 +15,34 @@ class ViewModel: NSObject {
     
     func goTo(viewControllerName:String, navigation: UINavigationController) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: viewControllerName) as! ProductListVC
-//        navigation.pushViewController(vc, animated: true)
+        //        let vc = storyboard.instantiateViewController(withIdentifier: viewControllerName) as! ProductListVC
+        //        navigation.pushViewController(vc, animated: true)
     }
+    
+    func showAlert (view:UIViewController, title:String, message:String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: title, style: .default, handler: { action in
+            switch action.style{
+            case .default:
+                print("default")
+                
+            case .cancel:
+                print("cancel")
+                
+            case .destructive:
+                print("destructive")
+                
+                
+            @unknown default:
+                print("unknown")
+            }}))
+        view.present(alert, animated: true, completion: nil)
+    }
+    
     func getFilePath(from resourceName:String, type: String) -> String {
         guard let path = Bundle.main.path(forResource: resourceName, ofType: type) else {
             debugPrint("file > \(resourceName).\(type) < not found")
+            
             return ""
         }
         return path
@@ -33,5 +55,5 @@ class ViewModel: NSObject {
         view.layer.addSublayer(playerLayer)
         player.play()
     }
-
+    
 }
