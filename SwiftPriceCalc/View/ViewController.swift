@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         print("SKIP PRESSED")
 //        show(ProductListVC(), sender: self)
 //        performSegue(withIdentifier: "ProductListSegue", sender: self)
-//        vm.goTo(viewControllerName: "ProductListVC", navigation: self.navigationController!)
+        vm.goTo(viewControllerName: Const().productVC, navigation: self.navigationController!)
     }
     
     

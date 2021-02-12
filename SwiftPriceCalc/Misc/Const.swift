@@ -11,4 +11,5 @@ import Foundation
 struct Const {
     let intro:String = "intro"
     let videoExt:String = "mp4"
+    let productVC:String = "ProductListVC"
 }

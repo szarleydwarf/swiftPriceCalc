@@ -15,8 +15,11 @@ class ViewModel: NSObject {
     
     func goTo(viewControllerName:String, navigation: UINavigationController) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        //        let vc = storyboard.instantiateViewController(withIdentifier: viewControllerName) as! ProductListVC
-        //        navigation.pushViewController(vc, animated: true)
+        let vc = storyboard.instantiateViewController(withIdentifier: viewControllerName) as! ProductListVC
+        if viewControllerName == Const().productVC {
+            vc.vm = ViewModel()
+        }
+        navigation.pushViewController(vc, animated: true)
     }
     
     func showAlert (view:UIViewController, title:String, message:String) {

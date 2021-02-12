@@ -55,14 +55,45 @@
             </objects>
             <point key="canvasLocation" x="757.97101449275374" y="136.60714285714286"/>
         </scene>
-        <!--View Controller-->
+        <!--Product ListVC-->
         <scene sceneID="hNu-Y8-mL5">
             <objects>
-                <viewController id="6eT-gf-lZK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductListVC" id="6eT-gf-lZK" customClass="ProductListVC" customModule="SwiftPriceCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i4s-eW-Abj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Products" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Jl-Yo-lBT">
+                                <rect key="frame" x="4" y="48" width="406" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.5" green="0.2653224032" blue="0.94349691899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FUK-mW-7GP">
+                                <rect key="frame" x="2" y="81" width="410" height="779"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="product" id="cG7-PW-X4f" customClass="ProductCell" customModule="SwiftPriceCalc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="410" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cG7-PW-X4f" id="inE-Nf-0FZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="410" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kDT-AR-OhA" firstAttribute="bottom" secondItem="FUK-mW-7GP" secondAttribute="bottom" constant="2" id="M6V-ze-imq"/>
+                            <constraint firstItem="1Jl-Yo-lBT" firstAttribute="leading" secondItem="kDT-AR-OhA" secondAttribute="leading" constant="4" id="WN6-Qy-wBb"/>
+                            <constraint firstItem="FUK-mW-7GP" firstAttribute="leading" secondItem="kDT-AR-OhA" secondAttribute="leading" constant="2" id="g0C-os-Thb"/>
+                            <constraint firstItem="kDT-AR-OhA" firstAttribute="trailing" secondItem="1Jl-Yo-lBT" secondAttribute="trailing" constant="4" id="gkQ-Iy-tgy"/>
+                            <constraint firstItem="1Jl-Yo-lBT" firstAttribute="top" secondItem="kDT-AR-OhA" secondAttribute="top" constant="4" id="h0J-VV-EGW"/>
+                            <constraint firstItem="FUK-mW-7GP" firstAttribute="top" secondItem="1Jl-Yo-lBT" secondAttribute="bottom" constant="4" id="v9j-hY-uRz"/>
+                            <constraint firstItem="kDT-AR-OhA" firstAttribute="trailing" secondItem="FUK-mW-7GP" secondAttribute="trailing" constant="2" id="zkU-GL-h42"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kDT-AR-OhA"/>
                     </view>
                 </viewController>
