@@ -76,7 +76,7 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="product" id="cG7-PW-X4f" customClass="ProductCell" customModule="SwiftPriceCalc" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="410" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cG7-PW-X4f" id="inE-Nf-0FZ">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ProductCell" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cG7-PW-X4f" id="inE-Nf-0FZ" customClass="ProductCell" customModule="SwiftPriceCalc" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="410" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
@@ -96,6 +96,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kDT-AR-OhA"/>
                     </view>
+                    <connections>
+                        <outlet property="table" destination="FUK-mW-7GP" id="EU9-DA-zdk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ugi-Zv-bXb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
