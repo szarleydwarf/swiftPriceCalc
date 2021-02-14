@@ -1,0 +1,20 @@
+{
+	"products": [{
+		"name": "Android",
+		"cost": 120,
+		"VAT": 21,
+		"extraCharges": [{
+			"firstName" : "delivery",
+			"firstValue" : 1000,
+			"secondName" : "delivery",
+			"secondValue" : 1330,
+			"thirdName" : "",
+			"thirdValue" : 0,
+			"forthName" : "",
+			"forthValue" : 0,
+			"fifthName" : "",
+			"fifthValue" : 0
+		}],
+		"profit": 25
+	}]
+}
