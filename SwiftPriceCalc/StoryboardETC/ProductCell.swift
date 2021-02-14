@@ -9,6 +9,10 @@
 import UIKit
 
 class ProductCell: UITableViewCell {
-
+    @IBOutlet weak var icon: UIImageView!
+    
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var cost: UILabel!
+    @IBOutlet weak var suggested: UILabel!
     
 }

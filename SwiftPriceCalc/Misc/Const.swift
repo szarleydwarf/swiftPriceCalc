@@ -12,5 +12,6 @@ struct Const {
     let intro:String = "intro"
     let videoExt:String = "mp4"
     let productVC:String = "ProductListVC"
-    let identifier = "product"
+    let identifier:String = "product"
+    let cellName:String = "ProductCell"
 }

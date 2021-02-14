@@ -15,22 +15,28 @@ class ProductListVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.table.delegate = self
+        self.table.dataSource = self
+
         self.registerCell()
-        
-        
     }
     
     func registerCell () {
-        let customCell = UINib(nibName: Const().identifier, bundle: nil)
+        let customCell = UINib(nibName: Const().cellName, bundle: nil)
         self.table.register(customCell, forCellReuseIdentifier: Const().identifier)
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        if let cell = tableView.dequeueReusableCell(withIdentifier: Const().identifier) as? ProductCell {
+            
+            return cell
+        }
+        return UITableViewCell()
     }
     
 }

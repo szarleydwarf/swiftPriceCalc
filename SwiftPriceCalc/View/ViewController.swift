@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         self.vm = ViewModel()
         let path = vm.getFilePath(from: "lol", type: Const().videoExt)
         if path.isEmpty {
-            vm.showAlert(view: self, title: "OK", message: "file > \(Const().intro).\(Const().videoExt) < not found")
+//            vm.showAlert(view: self, title: "OK", message: "file > \(Const().intro).\(Const().videoExt) < not found")
         }
         vm.playVideo(from: path, in:video)
     }
