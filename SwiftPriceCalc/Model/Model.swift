@@ -17,18 +17,18 @@ struct Product: Codable {
     let cost: Int?
     let VAT: Int?
     let profit: Int?
-    let extraCharges: Charges?
+    let extraCharges: [Charges]?
 }
 
 struct Charges: Codable {
-    let firstName: String?
-    let firstValue: Int?
-    let secondName: String?
-    let secondValue: Int?
-    let thirdName: String?
-    let thirdValue: Int?
-    let forthName: String?
-    let forthValue: Int?
-    let fifthName: String?
-    let fifthValue: Int?
+    let first: Charge?
+    let second: Charge?
+    let third: Charge?
+    let forth: Charge?
+    let fifth: Charge?
+}
+
+struct Charge: Codable {
+    let name: String?
+    let value: Int?
 }
